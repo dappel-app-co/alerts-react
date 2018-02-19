@@ -4,18 +4,19 @@ import './App.css';
 import AlertList from './alertList'
 
 class App extends Component {
-  getAlerts(){
+  getAlerts() {
     return [
-      {name: 'Hawaii being bombed', description: 'oops'},
-      {name: 'Tokyo being bombed', description: 'oops again'}
+      { name: 'Hawaii being bombed', description: 'oops' },
+      { name: 'Tokyo being bombed', description: 'oops again' }
     ]
-  } 
-  
+  }
+
   render() {
     return (
-      <div className="App">
-        <AlertList alerts={this.getAlerts()}/>
-      </div>
+      
+        <div className="App w3-container">
+          <AlertList alerts={this.getAlerts()} />
+        </div>
     );
   }
 }
